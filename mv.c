@@ -15,6 +15,7 @@ int main(int argc, char **argv)
 
 	if (strlen(argv[1]) > ARG_SIZE || strlen(argv[2]) > ARG_SIZE) {	// to prevent buffer overflow
 		printf("Too large arguments\n");
+		exit(1);
 	}
 	strcpy(src, argv[1]);
 	strcpy(dst, argv[2]);
